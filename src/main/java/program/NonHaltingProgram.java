@@ -2,11 +2,13 @@ package program;
 
 public class NonHaltingProgram implements Program {
 
+	// Solo utiliza una entrada
 	@Override
-	public void execute(Object input) {
+	public Object execute(Object... input) {
 		Integer i = 0;
-		while(i != input) {
+		while(i != input[0]) {
 			System.out.println(i);
 		}
+		return i;
 	}
 }
