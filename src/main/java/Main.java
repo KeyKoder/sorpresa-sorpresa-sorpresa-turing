@@ -3,6 +3,7 @@ import factory.HaltingProgramFactory;
 import factory.NonHaltingProgramFactory;
 import factory.ProgramFactory;
 import program.Program;
+import reverser.Reverser;
 
 public class Main {
 	public static void main(String[] args) {
@@ -13,5 +14,7 @@ public class Main {
 		ProgramFactory nhpf = new NonHaltingProgramFactory();
 		System.out.println(haltChecker.checkHalt(nhpf.createProgram()));
 
+		Program rev = new Reverser();
+		System.out.println(haltChecker.checkHalt(rev));
 	}
 }
