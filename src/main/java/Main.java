@@ -9,12 +9,18 @@ public class Main {
 	public static void main(String[] args) {
 		HaltChecker haltChecker = new HaltChecker();
 		ProgramFactory hpf = new HaltingProgramFactory();
-		System.out.println(haltChecker.checkHalt(hpf.createProgram()));
+		System.out.println("HaltingProgram");
+		System.out.println("Halted: " + haltChecker.checkHalt(hpf.createProgram(), 100));
+		System.out.println();
 
 		ProgramFactory nhpf = new NonHaltingProgramFactory();
-		System.out.println(haltChecker.checkHalt(nhpf.createProgram()));
+		System.out.println("NonHaltingProgram");
+		System.out.println("Halted: " + haltChecker.checkHalt(nhpf.createProgram(), 10));
+		System.out.println();
 
 		Program rev = new Reverser();
-		System.out.println(haltChecker.checkHalt(rev));
+		System.out.println("Reverser");
+		System.out.println("Halted: " + haltChecker.checkHalt(rev, hpf, 100));
+		System.out.println();
 	}
 }

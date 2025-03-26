@@ -7,7 +7,7 @@ public class NonHaltingProgram implements Program {
 	public Object execute(Object... input) {
 		Integer i = 0;
 		while(i != input[0]) {
-			System.out.println(i);
+//			System.out.println(i);
 		}
 		return i;
 	}
