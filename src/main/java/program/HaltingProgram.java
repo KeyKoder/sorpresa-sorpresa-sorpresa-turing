@@ -3,9 +3,11 @@ package program;
 public class HaltingProgram implements Program {
 
 	@Override
-	public void execute(int input) {
-		for(int i = 0; i < input; i++) {
+	public void execute(Object input) {
+		Integer i = 0;
+		while(i != input) {
 			System.out.println(i);
+			i++;
 		}
 	}
 }

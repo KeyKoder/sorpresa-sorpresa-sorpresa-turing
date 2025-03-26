@@ -1,5 +1,5 @@
 package program;
 
 public interface Program {
-	void execute(int input);
+	void execute(Object input);
 }
