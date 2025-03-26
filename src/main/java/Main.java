@@ -15,12 +15,16 @@ public class Main {
 
 		ProgramFactory nhpf = new NonHaltingProgramFactory();
 		System.out.println("NonHaltingProgram");
-		System.out.println("Halted: " + haltChecker.checkHalt(nhpf.createProgram(), 10));
+		System.out.println("Halted: " + haltChecker.checkHalt(nhpf.createProgram(), 100));
 		System.out.println();
 
 		Program rev = new Reverser();
-		System.out.println("Reverser");
+		System.out.println("Reverser H");
 		System.out.println("Halted: " + haltChecker.checkHalt(rev, hpf, 100));
+		System.out.println();
+
+		System.out.println("Reverser NH");
+		System.out.println("Halted: " + haltChecker.checkHalt(rev, nhpf, 100));
 		System.out.println();
 	}
 }
