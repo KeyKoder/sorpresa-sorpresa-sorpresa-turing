@@ -2,7 +2,7 @@
 
 ## Previo
 Nos hemos repartido el trabajo entre los dos, Víctor (KeyKoder) es el encargado hacer el Abstract Factory y la interfaz gráfica,
-mientras que Rodri (DonRodrigo04) es el encargado de hacer el Builder y el Prototype.
+mientras que Rodrigo (DonRodrigo04) es el encargado de hacer el Builder y el Prototype.
 
 Hemos tenido cada uno varios problemas al gestionar el tiempo y varias resposabilidades en nuestros respectivos entornos personales
 que nos han impedido llevar a cabo el proyecto como queríamos.
